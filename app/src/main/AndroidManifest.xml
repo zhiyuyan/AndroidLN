@@ -25,8 +25,19 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".tablayout.TabItemActivity"
+        <activity
+            android:name=".tablayout.TabItemActivity"
             android:label="TabLayout使用TabItem">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tablayout.TabLayoutViewPagerActivity"
+            android:label="TabLayout与ViewPager结合使用">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
