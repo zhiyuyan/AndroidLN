@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import java.text.Collator;
@@ -105,4 +107,11 @@ public class MainActivity extends ListActivity {
             return collator.compare(map1.get("title"), map2.get("title"));
         }
     };
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        Map map = (Map) l.getItemAtPosition(position);
+        Intent intent = (Intent) map.get("intent");
+        startActivity(intent);
+    }
 }
