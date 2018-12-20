@@ -44,6 +44,16 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity android:name=".lifecycle.LifeCycle1Activity"
+            android:label="Activity生命周期">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".lifecycle.LifeCycle2Activity" />
     </application>
 
 </manifest>
