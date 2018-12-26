@@ -3,6 +3,7 @@ package com.example.yzy.androidln.recyclerview;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -21,5 +22,8 @@ public class RecyclerViewDemoActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new MyAdapter());
+        DividerItemDecoration decoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
+        decoration.setDrawable(getResources().getDrawable(R.drawable.list_item_divider));
+        recyclerView.addItemDecoration(decoration);
     }
 }
