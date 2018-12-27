@@ -1,23 +1,28 @@
-package com.example.yzy.androidln.lifecycle;
+package com.example.yzy.androidln.launchmode;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
 
-import com.example.yzy.androidln.R;
+/**
+ * Created by yzy on 2018/12/27 0027.
+ */
 
-public class LifeCycle1Activity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity {
 
-    private static final String TAG = LifeCycle1Activity.class.getSimpleName();
+    private String TAG;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        TAG = this.getClass().getSimpleName();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_life_cycle1);
-        Log.d(TAG, "onCreate()");
+        Log.e(TAG, "===========================================onCreate=========================================================");
+        Log.e(TAG, "onCreate " + getClass().getSimpleName() + " TaskId: " + getTaskId() + " hasCode:" + this.hashCode());
+        dumpTaskAffinity();
     }
 
     @Override
@@ -62,9 +67,13 @@ public class LifeCycle1Activity extends AppCompatActivity {
         Log.d(TAG, "onDestroy()");
     }
 
-    public void onBtnClick(View view) {
-        Intent intent = new Intent(this, LifeCycle1Activity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        startActivity(intent);
+    protected void dumpTaskAffinity(){
+        try {
+            ActivityInfo info = this.getPackageManager()
+                    .getActivityInfo(getComponentName(), PackageManager.GET_META_DATA);
+            Log.e("TAG", "taskAffinity:"+info.taskAffinity);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }

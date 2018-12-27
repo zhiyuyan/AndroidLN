@@ -65,7 +65,8 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewpager.clipchildren.ClipChildrenDemoActivity"
+        <activity
+            android:name=".viewpager.clipchildren.ClipChildrenDemoActivity"
             android:label="ClipChildren属性">
 
             <intent-filter>
@@ -74,7 +75,8 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewpager.pagetransformer.TransformDemoActivity"
+        <activity
+            android:name=".viewpager.pagetransformer.TransformDemoActivity"
             android:label="ViewPager Transform">
 
             <intent-filter>
@@ -83,7 +85,8 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewpager.advanced.FragmentStatePagerAdapterActivity"
+        <activity
+            android:name=".viewpager.advanced.FragmentStatePagerAdapterActivity"
             android:label="ViewPager进阶">
 
             <intent-filter>
@@ -92,8 +95,31 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".recyclerview.RecyclerViewDemoActivity"
+        <activity
+            android:name=".recyclerview.RecyclerViewDemoActivity"
             android:label="RecyclerView">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".launchmode.StandardActivity"
+            android:label="Launch Mode-Standard"
+            android:launchMode="standard">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".launchmode.SingleTaskActivity"
+            android:label="Launch Mode-SingleTask"
+            android:launchMode="singleTask">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
