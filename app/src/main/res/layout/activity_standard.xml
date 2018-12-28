@@ -8,12 +8,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onBtn1Click"
-        android:text="跳转自己" />
+        android:text="跳转Standard" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onBtn2Click"
         android:text="跳转SingleTask" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBtn3Click"
+        android:text="跳转SingleInstance" />
 
 </LinearLayout>

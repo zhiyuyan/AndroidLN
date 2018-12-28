@@ -16,16 +16,21 @@ public class SingleTaskActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_single_task);
+        setContentView(R.layout.activity_standard);
     }
 
     public void onBtn1Click(View view) {
-        Intent intent = new Intent(this, SingleTaskActivity.class);
+        Intent intent = new Intent(this, StandardActivity.class);
         startActivity(intent);
     }
 
     public void onBtn2Click(View view) {
-        Intent intent = new Intent(this, StandardActivity.class);
+        Intent intent = new Intent(this, SingleTaskActivity.class);
+        startActivity(intent);
+    }
+
+    public void onBtn3Click(View view) {
+        Intent intent = new Intent(this, SingleInstanceActivity.class);
         startActivity(intent);
     }
 }

@@ -108,7 +108,8 @@
         <activity
             android:name=".launchmode.StandardActivity"
             android:label="Launch Mode-Standard"
-            android:launchMode="standard">
+            android:launchMode="standard"
+            android:taskAffinity="com.yzy.single.task">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -119,7 +120,17 @@
         <activity
             android:name=".launchmode.SingleTaskActivity"
             android:label="Launch Mode-SingleTask"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:taskAffinity="com.yzy.single.task">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".launchmode.SingleInstanceActivity" android:label="Launch Mode-SingleInstance"
+            android:launchMode="singleInstance">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

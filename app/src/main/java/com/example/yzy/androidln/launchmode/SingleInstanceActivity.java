@@ -8,10 +8,10 @@ import android.view.View;
 import com.example.yzy.androidln.R;
 
 /**
- * Created by yzy on 2018/12/27 0027.
+ * Created by yzy on 2018/12/28 0028.
  */
 
-public class StandardActivity extends BaseActivity {
+public class SingleInstanceActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,7 +21,6 @@ public class StandardActivity extends BaseActivity {
 
     public void onBtn1Click(View view) {
         Intent intent = new Intent(this, StandardActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
@@ -34,4 +33,5 @@ public class StandardActivity extends BaseActivity {
         Intent intent = new Intent(this, SingleInstanceActivity.class);
         startActivity(intent);
     }
+
 }
