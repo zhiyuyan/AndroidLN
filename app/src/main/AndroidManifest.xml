@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
 
         <service android:name=".service.MyService" />
+        <service android:name=".service.LocalIntentService" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -156,6 +157,46 @@
         <activity
             android:name=".thread.ThreadPoolDemoActivity"
             android:label="ThreadPool Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".thread.CallableDemoActivity"
+            android:label="Callable Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".thread.AsyncTaskDemoActivity"
+            android:label="AsyncTask Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".thread.AsyncTaskOrderTestActivity"
+            android:label="AsyncTask执行顺序Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".service.IntentServiceDemoActivity"
+            android:label="IntentService Demo">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
