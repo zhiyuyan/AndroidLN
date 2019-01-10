@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yzy.androidln">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -204,8 +206,29 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".threadlocal.ThreadLocalDemoActivity"
+        <activity
+            android:name=".threadlocal.ThreadLocalDemoActivity"
             android:label="ThreadLocal Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".glide.GlideDemoActivity"
+            android:label="Glide Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".imageloader.LruCacheDemoActivity"
+            android:label="LruCache Demo">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
