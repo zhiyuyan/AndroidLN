@@ -282,7 +282,7 @@ public class ImageLoader {
             final URL url = new URL(urlString);
             urlConnection = (HttpURLConnection) url.openConnection();
             in = new BufferedInputStream(urlConnection.getInputStream(), IO_BUFFER_SIZE);
-            out = new BufferedOutputStream(urlConnection.getOutputStream(), IO_BUFFER_SIZE);
+            out = new BufferedOutputStream(outputStream, IO_BUFFER_SIZE);
 
             int b;
             while ((b = in.read()) != -1) {
