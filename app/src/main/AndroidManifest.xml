@@ -4,13 +4,13 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
         <service android:name=".service.MyService" />
@@ -247,8 +247,19 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".okhttp.OkhttpDemoActivity"
+        <activity
+            android:name=".okhttp.OkhttpDemoActivity"
             android:label="Okhttp Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".window.WindowDemoActivity"
+            android:label="Window Demo">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

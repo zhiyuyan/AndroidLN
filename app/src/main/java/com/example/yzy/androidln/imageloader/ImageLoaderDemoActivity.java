@@ -17,8 +17,6 @@ import com.example.yzy.androidln.R;
 import com.example.yzy.androidln.utils.MyUtils;
 import com.example.yzy.androidln.view.widget.SquareImageView;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
