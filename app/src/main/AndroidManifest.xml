@@ -267,8 +267,79 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".anr.ANRDemoActivity"
+        <activity
+            android:name=".anr.ANRDemoActivity"
             android:label="ANR Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.CustomViewDemoActivity"
+            android:label="CustomView Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".animation.TweenAnimationActivity"
+            android:label="TweenAnimation Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".animation.ValueAnimationActivity"
+            android:label="ValueAnimation Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".animation.ObjectAnimationActivity"
+            android:label="ObjectAnimation Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".animation.CustomObjectAnimationActivity"
+            android:label="CustomObjectAnimation Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".animation.CustomObjectAnimationActivity2"
+            android:label="CustomObjectAnimation2 Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".animation.KeyFrame1Activity"
+            android:label="KeyFrame1 Demo">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
