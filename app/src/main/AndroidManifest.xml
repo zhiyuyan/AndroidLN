@@ -13,7 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
 
-        <service android:name=".service.MyService" />
+        <service android:name=".service.MyService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.example.servicetest.MyAIDLService"/>
+            </intent-filter>
+        </service>
         <service android:name=".service.LocalIntentService" />
 
         <activity android:name=".MainActivity">
@@ -340,6 +345,15 @@
         <activity
             android:name=".animation.KeyFrame1Activity"
             android:label="KeyFrame1 Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".anim.AnimationDrawableActivity"
+            android:label="AnimationDrawable Demo">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

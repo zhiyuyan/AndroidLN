@@ -3,10 +3,11 @@
 buildscript {
     
     repositories {
-        google()
+//        google()
         mavenCentral()
         jcenter()
         maven { url 'https://jitpack.io' }
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'
@@ -19,10 +20,11 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
+//        google()
         mavenCentral()
         jcenter()
         maven { url 'https://jitpack.io' }
+        google()
     }
     gradle.taskGraph.whenReady {
         tasks.each { task ->

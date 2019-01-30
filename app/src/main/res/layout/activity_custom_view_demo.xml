@@ -19,8 +19,12 @@
         <!--android:progressDrawable="@drawable/seekbar_progress_drawable"-->
         <!--android:thumb="@drawable/seekbar_thumb" />-->
 
-    <com.example.yzy.androidln.customview.EraseView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <!--<com.example.yzy.androidln.customview.EraseView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.example.yzy.androidln.customview.MyRegionView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </FrameLayout>
