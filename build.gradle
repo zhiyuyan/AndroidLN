@@ -3,10 +3,13 @@
 buildscript {
     
     repositories {
-//        google()
+        google()
         mavenCentral()
         jcenter()
         maven { url 'https://jitpack.io' }
+        maven {
+            url 'https://maven.google.com'
+        }
         google()
     }
     dependencies {
@@ -20,10 +23,13 @@ buildscript {
 
 allprojects {
     repositories {
-//        google()
+        google()
         mavenCentral()
         jcenter()
         maven { url 'https://jitpack.io' }
+        maven {
+            url 'https://maven.google.com'
+        }
         google()
     }
     gradle.taskGraph.whenReady {
