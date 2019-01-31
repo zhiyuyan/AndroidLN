@@ -6,29 +6,39 @@
     android:orientation="vertical">
 
     <!--<com.example.yzy.androidln.widget.IndicatorSeekbar-->
-        <!--android:id="@+id/indicator_seek_bar"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="5dp"-->
-        <!--android:background="@null"-->
-        <!--android:max="100"-->
-        <!--android:layout_gravity="center"-->
-        <!--android:maxHeight="2dp"-->
-        <!--android:minHeight="2dp"-->
-        <!--android:progress="50"-->
-        <!--android:progressDrawable="@drawable/seekbar_progress_drawable"-->
-        <!--android:thumb="@drawable/seekbar_thumb" />-->
+    <!--android:id="@+id/indicator_seek_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:background="@null"-->
+    <!--android:max="100"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:maxHeight="20dp"-->
+    <!--android:minHeight="20dp"-->
+    <!--android:progress="50"-->
+    <!--android:progressDrawable="@drawable/seekbar_progress_drawable"-->
+    <!--android:thumb="@drawable/seekbar_thumb" />-->
 
     <!--<com.example.yzy.androidln.customview.EraseView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" />-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
 
     <!--<com.example.yzy.androidln.customview.MyRegionView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content" />-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
 
-    <com.example.yzy.androidln.customview.MyTextView
+    <!--<com.example.yzy.androidln.customview.MyTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--<com.example.yzy.androidln.customview.MyBezierView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.example.yzy.androidln.customview.IndicatorSeekbar
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
 
 </LinearLayout>

@@ -3,6 +3,7 @@ package com.example.yzy.androidln.customview;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 
 import com.example.yzy.androidln.R;
 
@@ -18,4 +19,8 @@ public class CustomViewDemoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_custom_view_demo);
     }
 
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
+    }
 }
