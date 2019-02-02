@@ -14,6 +14,8 @@ import java.util.List;
 
 public class MyUtils {
 
+    public static final String TAG = "yanzhiyu";
+
     private MyUtils() {
 
     }
