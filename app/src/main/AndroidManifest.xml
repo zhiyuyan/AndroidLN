@@ -370,6 +370,16 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity android:name=".thread.HandlerThreadDemoActivity"
+            android:label="HandlerThrea Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>
