@@ -13,10 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
 
-        <service android:name=".service.MyService"
+        <service
+            android:name=".service.MyService"
             android:process=":remote">
             <intent-filter>
-                <action android:name="com.example.servicetest.MyAIDLService"/>
+                <action android:name="com.example.servicetest.MyAIDLService" />
             </intent-filter>
         </service>
         <service android:name=".service.LocalIntentService" />
@@ -352,7 +353,8 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".anim.AnimationDrawableActivity"
+        <activity
+            android:name=".anim.AnimationDrawableActivity"
             android:label="AnimationDrawable Demo">
 
             <intent-filter>
@@ -361,7 +363,8 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".dispatchevent.DispatchEventActivity"
+        <activity
+            android:name=".dispatchevent.DispatchEventActivity"
             android:label="DispatchEvent Demo">
 
             <intent-filter>
@@ -370,21 +373,34 @@
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".thread.HandlerThreadDemoActivity"
+        <activity
+            android:name=".thread.HandlerThreadDemoActivity"
             android:label="HandlerThread Demo">
 
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
 
         </activity>
-        <activity android:name=".scroll.SlideDemoActivity"
+        <activity
+            android:name=".scroll.SlideDemoActivity"
             android:label="Slide Demo">
 
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".scroll.ScrollerDemoActivity"
+            android:label="Scroller Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
