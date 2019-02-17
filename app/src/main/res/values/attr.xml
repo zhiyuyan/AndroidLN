@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IndicatorSeekbar">
+        <attr name="is_min_text_color" format="color|reference" />
+        <attr name="is_max_text_color" format="color|reference" />
+        <attr name="is_min_text_size" format="dimension|reference" />
+        <attr name="is_max_text_size" format="dimension|reference" />
+        <attr name="is_thumb_color" format="color|reference" />
+        <attr name="is_thumb_height" format="dimension|reference" />
+        <attr name="is_thumb_width" format="dimension|reference" />
+        <attr name="is_thumb_text_size" format="dimension|reference" />
+        <attr name="is_thumb_text_color" format="color|reference" />
+        <attr name="is_track_size" format="dimension|reference" />
+        <attr name="is_track_first_color" format="color|reference" />
+        <attr name="is_track_second_color" format="color|reference" />
+        <attr name="is_decor_first_color" format="color|reference" />
+        <attr name="is_decor_second_color" format="color|reference" />
+        <attr name="is_min" format="float|reference" />
+        <attr name="is_max" format="float|reference" />
+        <attr name="is_progress" format="float|reference" />
+        <attr name="is_bubble_color" format="color|reference" />
+        <attr name="is_bubble_text_color" format="color|reference" />
+        <attr name="is_bubble_text_size" format="dimension|reference" />
+        <attr name="is_decimal_places" format="integer|reference" />
+
+    </declare-styleable>
+
+</resources>

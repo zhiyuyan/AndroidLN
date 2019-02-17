@@ -19,8 +19,4 @@ public class CustomViewDemoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_custom_view_demo);
     }
 
-    @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
-        return super.dispatchTouchEvent(ev);
-    }
 }
