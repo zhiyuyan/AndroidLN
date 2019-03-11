@@ -406,6 +406,32 @@
             </intent-filter>
 
         </activity>
+        <activity
+            android:name=".broadcastreceiver.BroadcastReceiverDemoActivity"
+            android:label="BroadcastReceiver Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver android:name=".broadcastreceiver.MyBroadcastReceiver">
+            <intent-filter android:priority="200">
+                <action android:name="android.intent.action.MyBroadcastReceiver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastreceiver.SecondBroadcastReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.MyBroadcastReceiver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
