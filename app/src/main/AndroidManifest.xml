@@ -432,6 +432,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
+
+        <provider
+            android:name=".contentprovider.PersonContentProvider"
+            android:authorities="com.example.yzy.androidln.db.PersonContentProvider" />
     </application>
 
 </manifest>
