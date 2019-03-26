@@ -417,6 +417,17 @@
             </intent-filter>
 
         </activity>
+        <activity
+            android:name=".http.HttpUrlConnectionDemoActivity"
+            android:label="HttpUrlConnection Demo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+
+        </activity>
 
         <receiver android:name=".broadcastreceiver.MyBroadcastReceiver">
             <intent-filter android:priority="200">

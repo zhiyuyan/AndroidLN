@@ -140,7 +140,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
         cv.clear();
         cv.put(FIELD_ID, 17);
-        cv.put(FIELD_LOCATION, 72);
+        cv.put(FIELD_LOCATION, 17);
         cv.put(FIELD_SHOW, 0);
         db.insert(TABLE_NAME, null, cv);
 
