@@ -13,7 +13,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
-
         <service
             android:name=".service.MyService"
             android:process=":remote">
@@ -51,7 +50,6 @@
         <activity
             android:name=".tablayout.TabLayoutViewPagerActivity"
             android:label="TabLayout与ViewPager结合使用">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -61,7 +59,6 @@
         <activity
             android:name=".lifecycle.LifeCycle1Activity"
             android:label="Activity生命周期">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -72,7 +69,6 @@
         <activity
             android:name=".viewpager.pageradapter.PagerAdapterActivity"
             android:label="PagerAdapter Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -82,7 +78,6 @@
         <activity
             android:name=".viewpager.clipchildren.ClipChildrenDemoActivity"
             android:label="ClipChildren属性">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -92,7 +87,6 @@
         <activity
             android:name=".viewpager.pagetransformer.TransformDemoActivity"
             android:label="ViewPager Transform">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -102,7 +96,6 @@
         <activity
             android:name=".viewpager.advanced.FragmentStatePagerAdapterActivity"
             android:label="ViewPager进阶">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -112,7 +105,6 @@
         <activity
             android:name=".recyclerview.RecyclerViewDemoActivity"
             android:label="RecyclerView">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -124,7 +116,6 @@
             android:label="Launch Mode-Standard"
             android:launchMode="standard"
             android:taskAffinity="com.yzy.single.task">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -136,7 +127,6 @@
             android:label="Launch Mode-SingleTask"
             android:launchMode="singleTask"
             android:taskAffinity="com.yzy.single.task">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -147,7 +137,6 @@
             android:name=".launchmode.SingleInstanceActivity"
             android:label="Launch Mode-SingleInstance"
             android:launchMode="singleInstance">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -157,7 +146,6 @@
         <activity
             android:name=".service.ServiceDemoActivity"
             android:label="Service Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -167,7 +155,6 @@
         <activity
             android:name=".thread.ThreadPoolDemoActivity"
             android:label="ThreadPool Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -177,7 +164,6 @@
         <activity
             android:name=".thread.CallableDemoActivity"
             android:label="Callable Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -187,7 +173,6 @@
         <activity
             android:name=".thread.AsyncTaskDemoActivity"
             android:label="AsyncTask Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -197,7 +182,6 @@
         <activity
             android:name=".thread.AsyncTaskOrderTestActivity"
             android:label="AsyncTask执行顺序Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -207,7 +191,6 @@
         <activity
             android:name=".service.IntentServiceDemoActivity"
             android:label="IntentService Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -217,7 +200,6 @@
         <activity
             android:name=".threadlocal.ThreadLocalDemoActivity"
             android:label="ThreadLocal Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -227,7 +209,6 @@
         <activity
             android:name=".glide.GlideDemoActivity"
             android:label="Glide Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -237,7 +218,6 @@
         <activity
             android:name=".imageloader.LruCacheDemoActivity"
             android:label="LruCache Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -247,7 +227,6 @@
         <activity
             android:name=".imageloader.ImageLoaderDemoActivity"
             android:label="ImageLoader Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -257,7 +236,6 @@
         <activity
             android:name=".okhttp.OkhttpDemoActivity"
             android:label="Okhttp Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -267,7 +245,6 @@
         <activity
             android:name=".window.WindowDemoActivity"
             android:label="Window Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -277,7 +254,6 @@
         <activity
             android:name=".anr.ANRDemoActivity"
             android:label="ANR Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -287,7 +263,6 @@
         <activity
             android:name=".customview.CustomViewDemoActivity"
             android:label="CustomView Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -297,7 +272,6 @@
         <activity
             android:name=".animation.TweenAnimationActivity"
             android:label="TweenAnimation Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -307,7 +281,6 @@
         <activity
             android:name=".animation.ValueAnimationActivity"
             android:label="ValueAnimation Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -317,7 +290,6 @@
         <activity
             android:name=".animation.ObjectAnimationActivity"
             android:label="ObjectAnimation Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -327,7 +299,6 @@
         <activity
             android:name=".animation.CustomObjectAnimationActivity"
             android:label="CustomObjectAnimation Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -337,7 +308,6 @@
         <activity
             android:name=".animation.CustomObjectAnimationActivity2"
             android:label="CustomObjectAnimation2 Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -347,7 +317,6 @@
         <activity
             android:name=".animation.KeyFrame1Activity"
             android:label="KeyFrame1 Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -357,7 +326,6 @@
         <activity
             android:name=".anim.AnimationDrawableActivity"
             android:label="AnimationDrawable Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -367,7 +335,6 @@
         <activity
             android:name=".dispatchevent.DispatchEventActivity"
             android:label="DispatchEvent Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -377,78 +344,74 @@
         <activity
             android:name=".thread.HandlerThreadDemoActivity"
             android:label="HandlerThread Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".scroll.SlideDemoActivity"
             android:label="Slide Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".scroll.ScrollerDemoActivity"
             android:label="Scroller Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".broadcastreceiver.BroadcastReceiverDemoActivity"
             android:label="BroadcastReceiver Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".http.HttpUrlConnectionDemoActivity"
             android:label="HttpUrlConnection Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".viewsub.ViewStubDemoActivity"
             android:label="ViewStub Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".fragment.FragmentDemoActivity"
+        <activity
+            android:name=".fragment.FragmentDemoActivity"
             android:label="Fragment Demo">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="intent.category.androidln.SAMPLE_CODE" />
             </intent-filter>
+        </activity>
 
+        <activity android:name=".constraintlayout.ConstraintLayoutDemoActivity"
+            android:label="ConstraintLayout Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
         </activity>
 
         <receiver android:name=".broadcastreceiver.MyBroadcastReceiver">
@@ -458,7 +421,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-
         <receiver android:name=".broadcastreceiver.SecondBroadcastReceiver">
             <intent-filter android:priority="100">
                 <action android:name="android.intent.action.MyBroadcastReceiver" />
@@ -470,6 +432,7 @@
         <provider
             android:name=".contentprovider.PersonContentProvider"
             android:authorities="com.example.yzy.androidln.db.PersonContentProvider" />
+
     </application>
 
 </manifest>
