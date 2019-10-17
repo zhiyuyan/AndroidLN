@@ -405,8 +405,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".constraintlayout.ConstraintLayoutDemoActivity"
+        <activity
+            android:name=".constraintlayout.ConstraintLayoutDemoActivity"
             android:label="ConstraintLayout Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="intent.category.androidln.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".xml.XmlTestActivity"
+            android:label="Xml Parser Demo">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

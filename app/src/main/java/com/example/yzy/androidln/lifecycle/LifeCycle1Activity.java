@@ -62,6 +62,11 @@ public class LifeCycle1Activity extends AppCompatActivity {
         Log.d(TAG, "onDestroy()");
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
     public void onBtnClick(View view) {
         Intent intent = new Intent(this, LifeCycle1Activity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);

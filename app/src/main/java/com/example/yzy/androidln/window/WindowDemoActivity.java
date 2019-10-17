@@ -1,23 +1,15 @@
 package com.example.yzy.androidln.window;
 
-import android.Manifest;
 import android.app.Activity;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.yzy.androidln.R;
 import com.example.yzy.androidln.utils.ScreenUtils;
-import com.tbruyelle.rxpermissions2.RxPermissions;
-
-import io.reactivex.functions.Consumer;
 
 /**
  * Created by yzy on 2019/1/15 0015.

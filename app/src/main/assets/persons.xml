@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<persons>
+    <person id="1">
+        <name>刘备</name>
+        <age>12</age>
+    </person>
+    <person id="2">
+        <name>关羽</name>
+        <age>14</age>
+    </person>
+    <person id="3">
+        <name>张飞</name>
+        <age>15</age>
+    </person>
+</persons>
